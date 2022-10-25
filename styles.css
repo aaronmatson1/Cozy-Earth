@@ -24,7 +24,9 @@ body{
 }
 
 #title{
-    animation: .5s ease-out 0s 1 wait, 0.21s ease-out 3s 1 slideInFromLeft;
+    animation: .1s ease-out 0s 1 wait, 0.21s ease-out 3s 1 slideInFromLeft;
+    top: 60%;
+    position: absolute;
 }
 
 @keyframes slideInFromLeft {
@@ -46,6 +48,8 @@ body{
 .explore-item > .btn {
     font-size: 4vh;
     color: var(--secondary-color);
+    position: absolute;
+    bottom:10%;
 }
 .explore-item > .btn:hover {
     color:antiquewhite;
@@ -67,7 +71,8 @@ body{
 
 .card-container{
     padding: 10px;
-    width: 110%;
+    width: 125%;
+    margin-top: 100px;
     background-color: var(--secondary-color);
     transition: width 600ms ease-out, height 600ms ease-out;
 }
@@ -78,6 +83,7 @@ body{
 
 .card-text{
     color: black;
+    font-size: large;
 }
 
 .card-button{
