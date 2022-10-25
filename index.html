@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cozy Earth Code Challenge</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="./scripts.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    
+
+    <div class="container-fluid h-100">
+        <div class="row align-items-center">
+            <div class="explore col-lg-4 col-sm-12">
+                <ul class="" id="explore-list" style="visibility: visible;">
+                    <li class="explore-item" id="title">
+                        <h1>EXPLORE</h1>
+                    </li>
+                    <li class="explore-item">
+
+                        <button onclick="myFunction()" class="btn"><img src="./assets/Plus.svg" alt="Click to see more details">
+                            More Details</button>
+
+                        <div id="myDIV" style="display: none;">
+                          <button type="button" id="cardCloseButton" class="btn-close" aria-label="Close"></button>
+
+                          <div class="card-container">
+                            <h2 class="card-title"> 
+                                EXPLORE
+                            </h2>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, fuga in illum minima nemo error eum quae exercitationem harum, quaerat quisquam, sunt modi? Odio suscipit amet consequatur commodi aliquam officiis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos omnis obcaecati dignissimos atque cum optio suscipit officiis ducimus minus. Eos commodi explicabo placeat aut adipisci ab saepe sapiente facilis natus.</p>
+                            <button class="btn card-button btn-large"><a href="#"> READ MORE</a></button>
+                        </div>
+
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- Container Div-->
+
+        <div class="social-container col-lg-12 col-sm-12">
+            <div class="row facebook-container" id="icon-rows">
+                <div class="col-lg-8"></div><!--Seperator Div-->
+                <div class="col-lg-2 col-sm-12 ml-auto">
+                    <a href="https://www.facebook.com/cozyearth" target="_blank" rel="noopener">
+                        <img src="./assets/Facebook.svg" alt="Cozy Earth Facebook">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row instagram-container" id="icon-rows">
+                <div class="col-lg-8"></div>
+                <!--Seperator Div-->
+                <div class="col-lg-2 col-sm-12 ml-auto" >
+                    <a href="https://www.instagram.com/cozyearth/" target="_blank">
+                        <img src="./assets/Instagram.svg" alt="Cozy Earth instagram">
+                    </a>
+                </div>
+            </div>
+        </div><!-- Social Div -->
+    </div>
+
+    </body>
+
+</html>

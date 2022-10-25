@@ -1,0 +1,137 @@
+body{
+    background-image: url(./assets/Coding-Challenge-Image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color:#5A0002;
+    --secondary-color:#FFF;
+}
+
+.container{
+    background-color:#5A0002;
+    color: white;
+    width: 25%;
+    height: 100vh;
+    float: left;
+
+}
+
+#title{
+    animation: .5s ease-out 0s 1 wait, 0.21s ease-out 3s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  from { transform: translateY(120px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.explore{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    height: 100vh;
+    display: grid;
+}
+
+.explore-item > h1{
+    font-size:14vh !important;
+}
+
+.explore-item > .btn {
+    font-size: 4vh;
+    color: var(--secondary-color);
+}
+.explore-item > .btn:hover {
+    color:antiquewhite;
+}
+
+.explore-item > .btn > img{
+    padding-right: 10px;
+    transition: transform .4s ease-in-out;
+}
+
+.explore-item > .btn > img:hover{
+    transform: rotate(45deg);
+}
+
+.card{
+    width: 100%;
+    height: 40%;
+}
+
+.card-container{
+    padding: 10px;
+    width: 110%;
+    background-color: var(--secondary-color);
+    transition: width 600ms ease-out, height 600ms ease-out;
+}
+
+.card-title{
+    color: var(--primary-color);
+}
+
+.card-text{
+    color: black;
+}
+
+.card-button{
+    background-color: rgb(223, 223, 223);
+    border: 1px solid black;
+}
+
+#explore-list{
+    transition: visibility 100ms, opacity 0.5s ease-in-out;
+    list-style-type: none;
+}
+
+#explore-list::after{
+    transition-duration: 200ms;
+    transform:rotate(0.5turn)
+}
+
+#cardCollapse{
+    transition: visibility 200ms, opacity 0.5s ease-in-out;
+}
+#cardCollapse::after {
+    transform: rotate(0.5turn);
+    transition-duration: 250ms;
+}
+
+#cardCardCollapse{
+    border: 1px solid green;
+}
+
+
+
+
+/* -----------  MEDIA QUERIES ------------- */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        height: 100%;
+    }
+
+    .explore{
+        height: 80vh;
+
+    }
+
+    .card-container{
+        width: 80vw;
+        height: 45vh;
+        font-size: 2.25rem;
+    }
+
+}
+
+
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px, max-width: 1000px) {
+
+}
